@@ -1,0 +1,19 @@
+c:\users\mariusz\documents\visual studio 2015\Projects\Wisielec\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+c:\users\mariusz\documents\visual studio 2015\Projects\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+c:\users\mariusz\documents\visual studio 2015\Projects\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+c:\users\mariusz\documents\visual studio 2015\Projects\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+c:\users\mariusz\documents\visual studio 2015\Projects\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+c:\users\mariusz\documents\visual studio 2015\Projects\Wisielec\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+c:\users\mariusz\documents\visual studio 2015\Projects\Wisielec\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+c:\users\mariusz\documents\visual studio 2015\Projects\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+c:\users\mariusz\documents\visual studio 2015\Projects\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\adamf\Desktop\Wisielec\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\adamf\Desktop\Wisielec\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\adamf\Desktop\Wisielec\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\adamf\Desktop\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\adamf\Desktop\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\adamf\Desktop\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\adamf\Desktop\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\adamf\Desktop\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\adamf\Desktop\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\adamf\Desktop\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
