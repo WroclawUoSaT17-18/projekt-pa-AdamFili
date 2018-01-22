@@ -17,3 +17,13 @@ C:\Users\adamf\Desktop\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsA
 C:\Users\adamf\Desktop\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
 C:\Users\adamf\Desktop\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\adamf\Desktop\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\adamf\OneDrive\Dokumenty\GitHub\projekt-pa-AdamFili\Wisielec\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\adamf\OneDrive\Dokumenty\GitHub\projekt-pa-AdamFili\Wisielec\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\adamf\OneDrive\Dokumenty\GitHub\projekt-pa-AdamFili\Wisielec\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\adamf\OneDrive\Dokumenty\GitHub\projekt-pa-AdamFili\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\adamf\OneDrive\Dokumenty\GitHub\projekt-pa-AdamFili\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\adamf\OneDrive\Dokumenty\GitHub\projekt-pa-AdamFili\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\adamf\OneDrive\Dokumenty\GitHub\projekt-pa-AdamFili\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\adamf\OneDrive\Dokumenty\GitHub\projekt-pa-AdamFili\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\adamf\OneDrive\Dokumenty\GitHub\projekt-pa-AdamFili\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\adamf\OneDrive\Dokumenty\GitHub\projekt-pa-AdamFili\Wisielec\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

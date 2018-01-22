@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,13 +20,29 @@ namespace WindowsFormsApplication1
         private List<String> registeredSentences = new List<String>();
         private String actualSencence;
         private const int LAST_POSSIBLE_CHANCE = 5;
+        private int przegrane = 0;
+        private int wygrane = 0;
 
         public Form1()
         {
+            try
+            {
+                using (TextReader reader = File.OpenText("wyniki.txt"))
+                {
+                    wygrane = int.Parse(reader.ReadLine());
+                    przegrane = int.Parse(reader.ReadLine());
+                }
+            }
+            catch (Exception blad)
+            {
+                Console.WriteLine("Błąd plik nie istnieje:");
+            }
             InitializeComponent();
             panelGraph = panel.CreateGraphics();
             registerSentences();
             restartGame();
+            wyniki.Clear();
+            wyniki.AppendText("Wyniki: W:= " + wygrane.ToString() + " P:= " + przegrane.ToString());
         }
 
         private void registerSentences()
@@ -35,6 +52,9 @@ namespace WindowsFormsApplication1
             registeredSentences.Add("APLIKACJA");
             registeredSentences.Add("STUDENT");
             registeredSentences.Add("ELEKTRONIKA");
+            registeredSentences.Add("INFORMATYKA");
+            registeredSentences.Add("LAPTOP");
+
         }
 
         private String getRandomSentence()
@@ -56,9 +76,10 @@ namespace WindowsFormsApplication1
 
         private bool knowThisLetter(char letter)
         {
+            char LetterUp = char.ToUpper(letter);
             for (int i = 0; i < usedLetters.Count; ++i)
             {
-                if (usedLetters[i] == letter)
+                if (usedLetters[i] == LetterUp)
                     return true;
             }
             return false;
@@ -160,7 +181,7 @@ namespace WindowsFormsApplication1
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
+        }   
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -177,6 +198,14 @@ namespace WindowsFormsApplication1
 
         }
 
+        private void writeToFile()
+        {
+            System.IO.File.WriteAllText("wyniki.txt", wygrane.ToString());
+            System.IO.File.AppendAllText("wyniki.txt", "\r\n");
+            System.IO.File.AppendAllText("wyniki.txt", przegrane.ToString());
+            System.IO.File.AppendAllText("wyniki.txt", "\r\n");
+        }
+
         private void acctepCallback(object sender, EventArgs e)
         {
             char newLetter;
@@ -184,7 +213,7 @@ namespace WindowsFormsApplication1
             {
                 newLetter = characterBox.Text.ToCharArray()[0];
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return;
             }
@@ -197,7 +226,6 @@ namespace WindowsFormsApplication1
 
             newLetter = char.ToUpper(newLetter);
             usedLetters.Add(newLetter);
-            printSentence();
 
             if (knowThisLetter(actualSencence, newLetter))
             {
@@ -205,25 +233,40 @@ namespace WindowsFormsApplication1
                 {
                     panelGraph.Clear(Color.White);
                     printWin();
+                    ++wygrane;
+                    wyniki.Clear();
+                    wyniki.AppendText("Wyniki: W:= " + wygrane.ToString() + " P:= " + przegrane.ToString());
+                    writeToFile();
                     return;
                 }
+                printSentence();
             }
             else
             {
+                printSentence();
                 if (actualResultIter >= LAST_POSSIBLE_CHANCE)
                 {
                     printLose();
+                    ++przegrane;
+                    wyniki.Clear();
+                    wyniki.AppendText("Wyniki: W:= " + wygrane.ToString() + " P:= " + przegrane.ToString());
+                    writeToFile();
                     return;
                 }
                 refreshGraph();
                 ++actualResultIter;
             }
-        }
+         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             restartGame();
             characterBox.ReadOnly = false;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

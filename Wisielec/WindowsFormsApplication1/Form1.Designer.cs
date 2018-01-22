@@ -44,6 +44,8 @@ namespace WindowsFormsApplication1
             this.characterBox = new System.Windows.Forms.TextBox();
             this.panel = new System.Windows.Forms.Panel();
             this.resetButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.wyniki = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // characterButton
@@ -52,7 +54,7 @@ namespace WindowsFormsApplication1
             this.characterButton.Name = "characterButton";
             this.characterButton.Size = new System.Drawing.Size(100, 23);
             this.characterButton.TabIndex = 0;
-            this.characterButton.Text = "accept";
+            this.characterButton.Text = "Sprawdź";
             this.characterButton.UseVisualStyleBackColor = true;
             this.characterButton.Click += new System.EventHandler(this.acctepCallback);
             // 
@@ -89,15 +91,34 @@ namespace WindowsFormsApplication1
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(100, 29);
             this.resetButton.TabIndex = 4;
-            this.resetButton.Text = "reset";
+            this.resetButton.Text = "Nowe słowo";
             this.resetButton.UseVisualStyleBackColor = true;
             this.resetButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 5;
+            // 
+            // wyniki
+            // 
+            this.wyniki.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.wyniki.Location = new System.Drawing.Point(79, 15);
+            this.wyniki.Name = "wyniki";
+            this.wyniki.ReadOnly = true;
+            this.wyniki.Size = new System.Drawing.Size(379, 30);
+            this.wyniki.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 312);
+            this.Controls.Add(this.wyniki);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.characterBox);
@@ -119,6 +140,8 @@ namespace WindowsFormsApplication1
         private System.Windows.Forms.TextBox characterBox;
         private System.Windows.Forms.Panel panel;
         private Button resetButton;
+        private Label label1;
+        private TextBox wyniki;
     }
 }
 
